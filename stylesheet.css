@@ -1,0 +1,301 @@
+
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/*Start of CSS styling*/
+
+/*   font-family: 'Bebas Neue', sans-serif;
+     font-family: 'Montserrat', sans-serif;   */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+html {
+    box-sizing: border-box;
+    background-color: rgba(122, 191, 191, .5);
+}
+body {
+    width: 414px;
+    margin: 0 auto;
+    background-color: white;
+}
+header menu {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    width: 414px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    list-style: none;
+    position: relative;
+    top: 140px;
+}
+header menu a {
+    text-decoration: none;
+    text-align: center;
+    color: #EB5428;
+}
+
+menu,
+ul {
+  list-style: none;
+}
+ol {
+    display: list-item;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    position: relative;
+    top: 130px;
+}
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+}
+
+header {
+    background-color: #F2F2F2;
+    position: relative;
+    height: 260px;
+    top: 100px;
+}
+#main-pic img {
+    max-width: 100%;
+    position: relative;
+    top: 100px;
+
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#intro {
+    margin-top: 5px;
+    padding-left: 8px;
+    padding-right: 5px;
+    position: relative;
+    top: 100px;
+}
+dl {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10px;
+}
+dt {
+    margin-left: 8px;
+    flex-basis: 30%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+dd {
+    flex-basis: 60%;
+    flex-grow: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+#details {
+    margin-top: 140px;
+    margin-bottom: 40px;
+}
+#ingredients {
+    margin-bottom: 40px;
+}
+#ingredients li {
+    list-style:circle;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-left: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+#directions {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 8px;
+    margin-left: 15px;
+    line-height: 1.25;
+}
+#directions li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+#searchbar {
+    display: flex;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+}
+#searchbar button{
+    width: 40px;
+    height: 40px;
+}
+#searchbar svg {
+    position: absolute;
+    left: 220px;
+    top: 0;
+}
+input {
+    border-color: #EB5428;
+    height: 40px;
+}
+aside {
+    background-color: #7ABFBF;
+}
+aside h2 {
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+aside img {
+    transform: scale(.5,.5);
+}
+aside section {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+/*Menu Code  */
+
+nav {
+    position: absolute;
+    top: 0;
+}
+nav menu {
+    width: 80px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-in-out;
+    position: absolute;
+    top: 70px;
+    left: 13px;
+    z-index: 2;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    background-color: #EB5428;
+    box-shadow: 10px 10px 10px lightblue;
+}
+nav menu li {
+    text-align: center;
+    line-height: 1.5;
+}
+
+nav menu li:hover{
+    background-color: #F2F2F2;
+}
+
+
+input:checked ~ menu {
+    max-height: 500px;
+}
+nav input {
+    display: none;
+}
+label {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+label:before {
+    top: 5px;
+}
+label:after {
+    top: -5px;
+}
+nav h2 {
+    visibility: hidden;
+}
+
+
+
+
+
+/*Media Query : MEDIUM*/
+@media screen and (min-width:768px) {
+    body {
+        width: 768px;
+        margin: 0 auto;
+    }
+    aside div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/*Media Query : LARGE*/
+@media screen and (min-width:1280px) {
+    body {
+        width: 1280px;
+        margin: 0 auto;
+    }
+}
