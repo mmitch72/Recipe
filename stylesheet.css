@@ -210,9 +210,15 @@ aside h2 {
 }
 aside img {
     transform: scale(.5,.5);
+    width: 200px;
+}
+aside div h3 {
+    margin-top: 60px;
+    
 }
 aside section {
     display: flex;
+    flex-basis: 150px;
 }
 
 
@@ -260,6 +266,9 @@ nav input {
     display: none;
 }
 label {
+    display: grid;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
     position: absolute;
     top: 25px;
     left: 30px;
@@ -274,6 +283,25 @@ nav h2 {
     visibility: hidden;
 }
 
+footer h3 {
+    visibility: hidden;
+}
+footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+footer section p {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+}
+footer section img {
+    width: 50%;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
 
 
 
