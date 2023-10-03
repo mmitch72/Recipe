@@ -237,34 +237,29 @@ nav {
     position: absolute;
     top: 0;
 }
-nav menu {
+nav ul {
     width: 80px;
     max-height: 0;
     overflow: hidden;
     transition: max-height .3s ease-in-out;
-    position: absolute;
-    top: 70px;
-    left: 13px;
+    margin-top: 60px;
+    margin-left: 18px;
     z-index: 2;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 20px;
     background-color: #EB5428;
     box-shadow: 10px 10px 10px lightblue;
 }
-nav menu img{
+nav ul img{
     display: none;
 }
-nav menu li {
-    text-align: center;
+nav ul li {
     line-height: 1.5;
 }
 
-nav menu li:hover{
-    background-color: #F2F2F2;
-}
 
 
-input:checked ~ menu {
+input:checked ~ ul {
     max-height: 500px;
 }
 nav input {
@@ -287,14 +282,20 @@ label:after {
 nav h2 {
     visibility: hidden;
 }
-/*#home {
+li#home {
     position: absolute;
-    top: -100px;
-    right: -10px;
-    padding-bottom: 11px;
+    top: 0;
+    left: 60%;
     background-color: #EB5428;
+    padding: 12px 80px 10px;
     overflow: unset;
-}*/
+    height: 80px;
+}
+#avatar {
+    position: absolute;
+    left: 340px;
+    top: 20px;
+}
 
 footer h3 {
     visibility: hidden;
@@ -326,6 +327,7 @@ footer section img {
 
 
 /*Media Query : MEDIUM*/
+
 @media screen and (min-width:768px) {
     body {
         width: 768px;
@@ -371,7 +373,7 @@ footer section img {
     nav label {
         visibility: hidden;
     }
-    nav menu {
+    nav ul {
         overflow: unset;
         display: inline-flex;
         text-decoration: none;
@@ -379,13 +381,23 @@ footer section img {
         top: 170px;
         left: 30px;
     }
-    nav menu img{
+    nav ul img{
         display: inline;
     }
-    nav menu li a {
+    nav ul li a {
         color: #EB5428;
         text-decoration: none;
         padding: 0px 20px 0px;
+    }
+    input:checked ~ ul {
+        max-height: 0px;
+    }
+    li#home {
+        width: 100px;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 10px;
     }
     #home {
         position: absolute;
@@ -403,8 +415,7 @@ footer section img {
     }
     #avatar {
         position: absolute;
-        top: -145px;
-        left: 670px;
+        left: 700px;
         line-height: .8;
     }
     .foodicon {
@@ -414,11 +425,13 @@ footer section img {
     }
     .foodicon:hover {
         width: 60px;
+        background-color: none;
     }
     .menu-item {
         position: relative;
-        top: -50px;
-        padding-right: 27px;
+        top: 40px;
+        padding-right: 32px;
+        text-align: center;
     }
     #intro {
         top: 40px;
@@ -485,5 +498,23 @@ footer section img {
     body {
         width: 1280px;
         margin: 0 auto;
+    }
+    nav ul a {
+        position: absolute;
+        top: -100px; 
+        display: block;
+    }
+    nav ul {
+        width: 900px;
+        margin-left: 150px;
+    }
+    nav ul img {
+        padding-left: 10px;
+    }
+    #home {
+        top: 50px;
+    }
+    #avatar {
+        left: 100%;
     }
 }
